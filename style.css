@@ -1,7 +1,11 @@
 body{
     background-image: url('img/web.png');
-
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
+
 .bg-primary-color {
     background-color: #c87e6b;
 }
@@ -13,7 +17,7 @@ body{
     color: #fff;
  }
 #navbar a:hover{
-    color: green;
+    color: #765a33;
 }
 .nav-item:hover{
     font-weight: bold;
@@ -37,10 +41,8 @@ body{
     margin: 0 4em;
 
 }
-/*.nav-item{
-    margin-right: 30px;
-}*/
-.btn-flexpeak{
+
+.btn-rosa{
     background-color: #c87e6b;
     color: #fff;
     font-weight: bold;
@@ -50,7 +52,7 @@ body{
     text-align: center;
 }
 
-.btn-flexpeak:hover{
+.btn-rosa:hover{
     background-color:#fff;
      color: #c87e6b;
 }
@@ -85,6 +87,24 @@ body{
     color:#787878;
 }
 
+#principal{
+    padding-top: 8vh;
+    height: 121vh;
+}
+#principal h1{
+    font-family: 'Nuosu SIL', serif;
+    font-weight: bold;
+}
+
+#principal h3{
+    font-family: 'ABeeZee', sans-serif;
+    font-weight: bold;
+}
+
+#principal p{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 19px;
+}
 #principal-esquerdo{
     margin-top: 200px;
 }
@@ -97,13 +117,6 @@ body{
      color: #765a33;
 }
 
-#deco h2{
-    color: #484a4b;
-}
-
-#deco p{
-    color: #765a33;
-}
 .navbar-expand-lg .navbar-toggler{
     display: block;
     float: right;
@@ -130,16 +143,41 @@ body{
 #brown{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    position: absolute;
-    top: 155%;
-    left: 0;
-    height: 233px;
-    padding-top: 85px;
+    height: 25vh;
+    padding-top: 7vh;
     text-align: center;
     background:#6b502c;
     color: #fff;
     font-weight: bold;
+    font-size: 25px;
     font-family: 'Playfair Display', Serif;
+}
+
+#top-produtos{
+    margin-top: 17vh;
+}
+#top-produtos h2{
+    font-family: 'Nuosu SIL', serif;
+    font-size: 38px;
+}
+
+
+.deco {
+    color: #484a4b;
+    font-family: 'Nuosu SIL', serif;
+    font-weight: bolder;
+}
+
+.deco-2{
+    color: #765a33;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 18px;
+    
+}
+
+#produtos{
+    margin-top: 15vh;
+    margin-left: 40px;
 }
 
 #flores{
@@ -155,16 +193,17 @@ h3.card-title{
     
 }
 
-
+.card-text{
+    font-size: 0.8em;
+    text-align: justify;
+}
 
 .bnt-card{
     background-color: #454545;
     color: #fff;
     font-weight: bold;
-    margin-left: 40px;
-    border-radius: 35px;
-    padding: 10px 25px;
-    border: 1px solid #fff; 
+    border-radius: 40px;
+    width: 10vw;
     text-decoration: none;
 }
 
@@ -174,7 +213,126 @@ h3.card-title{
     color: #454545; 
 }
 
+.div-btn-carousel{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 13vh;
+    width: 8vw;
+}
+
+.btn-carousel{
+    border-radius: 50%;
+    text-align: center;
+    background-color: #484a4b;
+    color: #fff;
+    padding: 5px;
+    border: none;
+}
+
 #texto-align{
     margin-top: 250px;
     font-weight: bold;
 }
+
+.video{
+    margin-top: 12vh;
+}
+
+iframe{
+    margin-left: 14vw;
+}
+.title-video{
+    margin-top: 10vh;
+    padding: 5px;
+}
+
+.title-video{
+    margin-top: 18vh;
+}
+/* ------------------------------ */
+.oferta{
+    margin-top: 25vh;
+    padding-left: 20vw;
+}
+
+.oferta-left{
+    padding-top: 16vh;
+}
+
+.best-flowers{
+    margin-top: 18vh;
+    padding-left: 8vw;
+}
+
+.best-flowers-right{
+    margin-top: 30vh;
+    padding-left: 8vw;
+}
+
+.detalhes{
+    margin-top: 45vh;
+    margin-left: 15vh;
+}
+
+.detalhes-left{
+    margin-top: 30vh;
+}
+
+.img-1{
+    padding-left: 5vw;
+    margin-right: 16vh;
+}
+
+.love-flowers{
+    margin-top: 50vh;
+    padding-left: 7vw;
+}
+
+.love-flowers-rigth{
+   margin-top: 20vh;
+   padding-top: 20vw;
+}
+
+.form{
+    width:40vw;
+    margin-left:auto ;
+    margin-right: auto;
+}
+.input:focus {
+    outline: none !important;
+    border:2px solid #df7f6a;
+    box-shadow: 0 0 10px #df7f6a;
+  }
+
+.bnt-message{
+    background-color: #df7f6a;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 30vh;
+    border-radius: 35px;
+    padding: 10px 25px;
+    border: 1px solid #fff; 
+    text-decoration: none; 
+}
+
+.bnt-message:hover{
+    background-color:#fff ;
+    color: #df7f6a;
+}
+
+footer{
+    background-color: #484a4b;
+    margin-top: 4vh;
+   
+}
+
+.text-white{
+    text-decoration: none;
+}
+
+
+
+
+
+
+

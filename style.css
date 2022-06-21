@@ -91,6 +91,7 @@ body{
     padding-top: 8vh;
     height: 121vh;
 }
+
 #principal h1{
     font-family: 'Nuosu SIL', serif;
     font-weight: bold;
@@ -141,9 +142,11 @@ body{
 }
 
 #brown{
+    position: relative;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     height: 25vh;
+    margin-top: 15vh;
     padding-top: 7vh;
     text-align: center;
     background:#6b502c;
@@ -151,14 +154,21 @@ body{
     font-weight: bold;
     font-size: 25px;
     font-family: 'Playfair Display', Serif;
+    z-index: 2;
 }
 
 #top-produtos{
-    margin-top: 17vh;
+    margin-top: 30vh;
 }
+
 #top-produtos h2{
     font-family: 'Nuosu SIL', serif;
     font-size: 38px;
+}
+
+#produtos{
+    margin-top: 28vh;
+    margin-left: 40px;
 }
 
 
@@ -173,11 +183,6 @@ body{
     font-family: 'Nanum Myeongjo', serif;
     font-size: 18px;
     
-}
-
-#produtos{
-    margin-top: 15vh;
-    margin-left: 40px;
 }
 
 #flores{
@@ -235,12 +240,13 @@ h3.card-title{
 }
 
 .video{
-    margin-top: 12vh;
+    margin-top: 15vh;
 }
 
 iframe{
     margin-left: 14vw;
 }
+
 .title-video{
     margin-top: 10vh;
     padding: 5px;
@@ -250,54 +256,88 @@ iframe{
     margin-top: 18vh;
 }
 /* ------------------------------ */
+
 .oferta{
-    margin-top: 25vh;
-    padding-left: 20vw;
+    margin-top: 31vh;
+    height: 58vh;
 }
 
 .oferta-left{
-    padding-top: 16vh;
+    padding-top: 20vh;
+    padding-left: 40vh;
+}
+
+
+.oferta-img img{
+    min-width: 100%;
+    min-height: 98%;
+    max-height: 98%;
+    max-width: 100%;
 }
 
 .best-flowers{
     margin-top: 18vh;
     padding-left: 8vw;
+    height: 90vh;
+    padding: 0;
+    padding-left: 6vw;
+    padding-top: 2vh;
 }
 
 .best-flowers-right{
-    margin-top: 30vh;
-    padding-left: 8vw;
+  padding-top: 30vh;
+}
+
+.best-flowers-img img{
+    min-width: 90%;
+    min-height: 98%;
+    max-height: 98%;
+    max-width: 90%;    
 }
 
 .detalhes{
-    margin-top: 45vh;
-    margin-left: 15vh;
+    margin-top: 50vh;
+    padding: 0;
+    height: 90vh;
 }
 
 .detalhes-left{
-    margin-top: 30vh;
+    padding-left: 10vw;
+    padding-top: 28vh;
 }
 
-.img-1{
-    padding-left: 5vw;
-    margin-right: 16vh;
+.detalhes-img img{
+    min-width: 90%;
+    min-height: 90%;
+    max-height: 90%;
+    max-width: 90%;
+    padding-left: 10vw; 
 }
 
 .love-flowers{
-    margin-top: 50vh;
-    padding-left: 7vw;
+    margin-top: 55vh;
+    height: 90vh;
 }
 
-.love-flowers-rigth{
-   margin-top: 20vh;
-   padding-top: 20vw;
+.love-flowers-right{
+    padding-top: 30vh;
+}
+
+.love-flowers-img img{
+    min-width: 90%;
+    min-height: 98%;
+    max-height: 98%;
+    max-width: 90%;
+    padding-left: 5vw;
 }
 
 .form{
     width:40vw;
     margin-left:auto ;
     margin-right: auto;
+    margin-top: 30vh;
 }
+
 .input:focus {
     outline: none !important;
     border:2px solid #df7f6a;
@@ -329,10 +369,3 @@ footer{
 .text-white{
     text-decoration: none;
 }
-
-
-
-
-
-
-
